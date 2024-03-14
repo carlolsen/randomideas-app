@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
@@ -18,7 +19,7 @@ module.exports = {
     compress: true,
     historyApiFallback: true,
     proxy: {
-      '/api': 'http://localhost:5001',
+      '/api': 'http://localhost:5000',
     },
   },
   module: {
