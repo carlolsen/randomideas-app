@@ -17,6 +17,9 @@ module.exports = {
     hot: true,
     compress: true,
     historyApiFallback: true,
+    proxy: {
+      '/api': 'http://localhost:5001',
+    },
   },
   module: {
     rules: [
